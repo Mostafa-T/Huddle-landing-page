@@ -157,3 +157,14 @@ header {
   }
 }
 /* End Media Queries */
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+}
