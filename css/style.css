@@ -68,8 +68,8 @@ header {
 .head__caption p {
   line-height: 1.5;
   margin-bottom: 1rem;
-  padding-right: 3rem;
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 .head__caption a {
   display: block;
