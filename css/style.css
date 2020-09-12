@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+/* 
+  ================================
+  CSS INDEX
+  ================================
+
+  -- CSS global styling
+  -- Header
+  -- Media Queries
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxs;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Start Header */
+header {
+  height: 100vh;
+  background-image: url('../images/bg-desktop.svg');
+  background-size: cover;
+  background-position: center;
+  background-color: hsl(257, 57%, 39%);
+}
+.nav-logo {
+  padding: 3% 5% 4%;
+}
+.nav-logo img {
+  width: 200px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5%;
+}
+
+.head__caption {
+  align-self: flex-start;
+  margin: 0rem 3rem;
+  padding: 1rem;
+  color: #fff;
+}
+.head__caption h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 2rem 0rem;
+}
+.head__caption p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  padding-right: 3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.head__caption a {
+  display: block;
+  width: 130px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #fff;
+  text-align: center;
+  color:hsl(257, 57%, 39%);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+
+  transition: .3s;
+}
+.head__caption a:hover {
+  background-color: hsl(257, 57%, 39%);
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem ;
+}
+.social-media > li > a {
+  display: block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  margin: 0px 10px;
+
+  transition: .3s;
+}
+
+.social-media li  a:hover {
+  color: #333;
+  background-color: #fff;
+}
+/* End Header */
+
+/* Start Media Queries */
+
+@media  (max-width: 960px) {
+
+  header {
+    height: 100%;
+  }
+  .head {
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav-logo {
+    padding: 2% 5% 8%;
+  }
+
+  .head__image img {
+    width: 100%;
+  }
+
+  .head__caption {
+    margin: 0rem 1rem;
+    text-align: center;
+  }
+  .head__caption h1 {
+    font-size: 25px;
+  }
+  .head__caption p {
+    padding: 0rem;
+  }
+
+  .head__caption a {
+    width: 200px;
+    margin: auto;
+  }
+
+  .social-media {
+    justify-content: center;
+    margin:0;
+    padding: 2rem 0rem;
+  }
+}
+/* End Media Queries */
